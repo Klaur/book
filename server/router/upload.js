@@ -18,18 +18,22 @@ router.post('/upload',async ctx=>{
               r({ err })
           } else {
               // 手动给文件加后缀, formidable默认保存的文件是无后缀的
-              let newPath = files.file.path + '_' + files.file.name
-              fs.renameSync(files.file.path, newPath)
-              r({ path: newPath })
+              let filesIndex=Object.keys(files)
+              let filePaths=[]
+              for(let i=0;i<filesIndex.length;i++){
+                let newPath = files[filesIndex[i]].path + '_' + files[filesIndex[i]].name  
+                fs.renameSync(files[filesIndex[i]].path, newPath) 
+                filePaths.push('/' + path.basename(newPath))
+              }
+              r({filePaths})
           }
       })
   })
-  const basename = '/' + path.basename(result.path)
   if (result.err) ctx.throw(400, '异常错误')
   else ctx.body = {
     code:0,
     data:{
-      url:basename
+      url:result.filePaths
     }
   }
 })

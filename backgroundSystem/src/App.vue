@@ -21,10 +21,10 @@
               <i class="el-icon-document"></i>
               <span slot="title">图书分类</span>
             </el-menu-item>
-            <!-- <el-menu-item index="4">
+            <el-menu-item index="/upload">
               <i class="el-icon-setting"></i>
-              <span slot="title">导航四</span>
-            </el-menu-item> -->
+              <span slot="title">上传组件</span>
+            </el-menu-item>
           </el-menu>
         </el-aside>
         <el-main style="background:#eee">

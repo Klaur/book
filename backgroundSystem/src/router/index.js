@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import BookList from '@/page/bookList'
 import Catogories from '@/page/catogories'
+import Upload from '@/page/upload'
 Vue.use(Router)
 
 export default new Router({
@@ -19,6 +20,11 @@ export default new Router({
       path: '/catogories',
       name: 'catogories',
       component: Catogories
+    },
+    {
+      path: '/upload',
+      name: 'upload',
+      component: Upload
     }
   ]
 })
