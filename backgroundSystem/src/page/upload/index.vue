@@ -3,7 +3,7 @@
   <div style="height:100%;background:#fff">
     <div v-for="(item,index) of data" :key="index">
     上传页面 <button @click="show">show</button>
-    <Upload style="margin:0 auto;width:100px" :limit="limit" :maxSize='1024*5' :filelist="item.url" @success="handlesuccess" @limitErr="handleLimitErr" @maxSizeErr="handleMaxSizeErr"></Upload>
+    <Upload style="margin:0 auto;width:100px" :auto="true" :limit="limit" :maxSize='1024*5' :filelist="item.url" @success="handlesuccess" @limitErr="handleLimitErr" @maxSizeErr="handleMaxSizeErr"></Upload>
     </div>
   </div>
 </template>

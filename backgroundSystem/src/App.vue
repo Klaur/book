@@ -25,6 +25,10 @@
               <i class="el-icon-setting"></i>
               <span slot="title">上传组件</span>
             </el-menu-item>
+            <el-menu-item index="/searchList">
+              <i class="el-icon-setting"></i>
+              <span slot="title">搜索列表</span>
+            </el-menu-item>
           </el-menu>
         </el-aside>
         <el-main style="background:#eee">
