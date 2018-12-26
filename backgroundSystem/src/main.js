@@ -8,6 +8,7 @@ import 'element-ui/lib/theme-chalk/index.css';
 import axios from 'axios'
 import moment from 'moment'
 import './assets/css/style.styl'
+// import '../static/tinymce/skins/lightgray/skin.min.css'
 Vue.config.productionTip = false
 Vue.use(ElementUI);
 Vue.prototype.$http=axios

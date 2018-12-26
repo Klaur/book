@@ -29,6 +29,10 @@
               <i class="el-icon-setting"></i>
               <span slot="title">搜索列表</span>
             </el-menu-item>
+            <el-menu-item index="/editor">
+              <i class="el-icon-setting"></i>
+              <span slot="title">编辑器</span>
+            </el-menu-item>
           </el-menu>
         </el-aside>
         <el-main style="background:#eee">

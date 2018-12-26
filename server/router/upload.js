@@ -18,6 +18,7 @@ router.post('/upload',async ctx=>{
               r({ err })
           } else {
               // 手动给文件加后缀, formidable默认保存的文件是无后缀的
+              console.log(files)
               let filesIndex=Object.keys(files)
               let filePaths=[]
               for(let i=0;i<filesIndex.length;i++){

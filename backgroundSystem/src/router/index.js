@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import BookList from '@/page/bookList'
 import Catogories from '@/page/catogories'
 import Upload from '@/page/upload'
+import Editor from '@/components/editor'
 import SearchList from '@/page/search-list'
 Vue.use(Router)
 
@@ -30,6 +31,11 @@ export default new Router({
       path:'/searchList',
       name:'searchList',
       component:SearchList
-    }
+    },
+    {
+      path: '/editor',
+      name: 'editor',
+      component: Editor
+    },
   ]
 })
